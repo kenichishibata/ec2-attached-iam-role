@@ -9,4 +9,27 @@ Instead, you can and should use an IAM role to manage temporary credentials for 
 For ease of mind use attached EC2 Iam credentials (if it exists) instead of hardcoding it in your repo or environment variable.
 This is the most secure way of using AWS resources from EC2. Since these IAM credentials is temporary and therefore more secure
 
-# Example
+# Preference
+* Via export
+* Via callback
+
+# Example via export
+
+```
+ssh myEc2Instance
+git clone myrepo.git
+node example/sample.js
+echo $AKID # should give you the ec2 AccessKeyId if attached iam role exists
+echo $SECRET # should give you the ec2 SecretAccessKey if attached iam role exists
+```
+
+# Example via callback
+inside ec2 instance
+`node example/sample.js`
+```
+var IAM = require('../security');
+
+IAM(function(err,res){
+  console.log(res);
+});
+```
