@@ -1,0 +1,27 @@
+{
+  "name": "ec2-attached-iam-role",
+  "version": "0.0.1",
+  "description": "a small zero dependency module for extracting attached ec2, AKID and Secret without hardcoding",
+  "main": "security.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenichishibata/ec2-attached-iam-role.git"
+  },
+  "keywords": [
+    "ec2",
+    "attached",
+    "iam",
+    "role",
+    "security",
+    "node"
+  ],
+  "author": "Kenichi Shibata <kenichi.shibata@fastretailing.com> (kenichishibata31.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenichishibata/ec2-attached-iam-role/issues"
+  },
+  "homepage": "https://github.com/kenichishibata/ec2-attached-iam-role#readme"
+}
