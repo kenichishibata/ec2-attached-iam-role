@@ -18,7 +18,7 @@ This is the most secure way of using AWS resources from EC2. Since these IAM cre
 ```
 ssh myEc2Instance
 git clone myrepo.git
-./exporting.sh
+source ./exporting.sh
 echo $AKID # should give you the ec2 AccessKeyId if attached iam role exists
 echo $SECRET # should give you the ec2 SecretAccessKey if attached iam role exists
 ```
