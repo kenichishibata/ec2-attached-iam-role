@@ -10,8 +10,8 @@ For ease of mind use attached EC2 Iam credentials (if it exists) instead of hard
 This is the most secure way of using AWS resources from EC2. Since these IAM credentials is temporary and therefore more secure
 
 # Preference
-* Via export
-* Via callback
+* Via export (environment variable)
+* Via callback (nodejs)
 
 # Example via export
 
